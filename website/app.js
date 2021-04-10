@@ -5,8 +5,8 @@ let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 let date = d.getDate() + '.'+ (d.getMonth() + 1 )+ '.' + d.getFullYear();
 
-let myUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-let myApiKey = '&APPID=9cb7b581d8290eb7a3e1e26ae7fdc250';
+const myUrl = 'http://api.openweathermap.org/data/2.5/weather?units=metric&zip=';
+const myApiKey = '&APPID=9cb7b581d8290eb7a3e1e26ae7fdc250';
 
 document.getElementById('generate').addEventListener('click' , showTheData);
 function showTheData(e){
